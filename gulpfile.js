@@ -4,19 +4,19 @@ const sass = require('gulp-sass');
 
 gulp.task('sass', function() {
   return gulp
-    .src(['src/sass/*.sass'])
+    .src(['./sass/*.sass'])
     .pipe(sass())
-    .pipe(gulp.dest('src/css'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('serve', ['sass'], function() {
   browserSync.init({
-    server: './src'
+    server: './'
   });
 
-  gulp.watch(['src/sass/*.sass'], ['sass']);
-  gulp.watch(['src/*.html']).on('change', browserSync.reload);
+  gulp.watch(['./sass/*.sass'], ['sass']);
+  gulp.watch(['./*.html']).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
