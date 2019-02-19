@@ -1,0 +1,51 @@
+
+.nav-aside 
+    width: 80px
+    text-align: center
+    background-color: $nav-aside-bg-color
+
+.logo 
+    padding-top: 18px
+    margin-bottom: 50px
+
+.panel-item
+   display: flex
+   justify-content: center
+   align-items: center
+   padding-top: 30px
+   padding-bottom: 30px
+   max-height: 44px
+   
+
+.panel-item-button
+    border: 0
+    background-color: $nav-aside-bg-color
+    padding: 5px
+    &:hover
+      background-color: lighten($nav-aside-bg-color, 50%)
+    
+
+.panel-item.active
+    border-left: 2px solid #0AD69C
+
+.panel-item-button.message-icon
+    position: relative
+
+.panel-item-button.message-icon:after
+    content: '1'
+    font-family: Roboto
+    font-size: 12px
+    font-weight: bold
+    padding-top: 3px
+    padding-bottom: 3px
+    background-color: $nav-input-message-bg-color
+    display: block
+    width: 19px
+    color: $primary-color
+    border-radius: 50%
+    position: absolute
+    top: -5px
+    right: -5px
+
+
+

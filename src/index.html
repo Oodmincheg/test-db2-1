@@ -4,8 +4,213 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2:600"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <nav class="nav-aside">
+        <div class="logo"><img src="./img/logo.svg" alt="logo" /></div>
+        <ul class="panel">
+          <li class="panel-item ">
+            <button class="panel-item-button message-icon">
+              <img src="./img/calendar.svg" alt="calendar icon" />
+            </button>
+          </li>
+          <li class="panel-item">
+            <button class="panel-item-button">
+              <img src="./img/user-silhouette-2.svg" alt="user icon" />
+            </button>
+          </li>
+          <li class="panel-item">
+            <button class="panel-item-button">
+              <img src="./img/handyman-tools.svg" alt="tools icon" />
+            </button>
+          </li>
+          <li class="panel-item ">
+            <button class="panel-item-button">
+              <img src="./img/team-2.svg" alt="team icon" />
+            </button>
+          </li>
+          <li class="panel-item active">
+            <button class="panel-item-button">
+              <img src="./img/messages.svg" alt="messages icon" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <header class="main-header">
+          <div class="bread-crumbs">
+            <div class="bread-crumbs-items">Home</div>
+            <div class="right-shevron">
+              <img src="./img/chevron-right.svg" alt="header right shevron " />
+            </div>
+            <div class="bread-crumbs-items">Network</div>
+          </div>
+          <div class="login">
+            <img
+              class="login-image"
+              src="./img/login-picture.png"
+              alt="login user image "
+            />
+            <div class="login-name">Sarah Freeman</div>
+            <img
+              class="login-chevron-down"
+              src="./img/chevron-down.svg"
+              alt="shevron down icon"
+            />
+          </div>
+        </header>
+        <div class="chat-window">
+          <ul class="contacts">
+            <li class="contact before-selected">
+              <img
+                class="contact-image"
+                src="./img/Miranda.png"
+                alt="contact picture"
+              />
+              <div class="contact-data">
+                <p class="contact-name">Miranda Hops</p>
+                <p class="contact-signature">Excepteur sint occaecatar…</p>
+              </div>
+              <div class="contact-time">9:32</div>
+            </li>
+            <li class="contact before-selected">
+              <img
+                class="contact-image"
+                src="./img/barry.png"
+                alt="contact picture"
+              />
+              <div class="contact-data">
+                <p class="contact-name">Barry Callebaut</p>
+                <p class="contact-signature">Nemo enim ipsam volupta…</p>
+              </div>
+              <div class="contact-time">9:32</div>
+            </li>
+            <li class="contact selected">
+              <img
+                class="contact-image"
+                src="./img/stacey.png"
+                alt="contact picture"
+              />
+              <div class="contact-data">
+                <p class="contact-name">Stacey Dosh</p>
+                <p class="contact-signature">Ut enim ad minima veniam…</p>
+              </div>
+              <div class="contact-time">22:01</div>
+            </li>
+            <li class="contact ">
+              <img
+                class="contact-image"
+                src="./img/michael.png"
+                alt="contact picture"
+              />
+              <div class="contact-data">
+                <p class="contact-name">Michael Kors</p>
+                <p class="contact-signature">To take a trivial example…</p>
+              </div>
+              <div class="contact-time">19:15</div>
+            </li>
+            <li class="contact">
+              <img
+                class="contact-image"
+                src="./img/samantha.png"
+                alt="contact picture"
+              />
+              <div class="contact-data">
+                <p class="contact-name">Samantha Love</p>
+                <p class="contact-signature">Ut enim ad minima veniam…</p>
+              </div>
+              <div class="contact-time">13:49</div>
+            </li>
+            <li class="contact">
+              <img
+                class="contact-image"
+                src="./img/johny.png"
+                alt="contact picture"
+              />
+              <div class="contact-data">
+                <p class="contact-name">Johny Cash</p>
+                <p class="contact-signature">Great explorer of the truth…</p>
+              </div>
+              <div class="contact-time">10:25</div>
+            </li>
+          </ul>
+
+          <div class="main-chat-window">
+            <input type="text" class="search" placeholder="Search message..." />
+            <div class="messages-window">
+              <div class="date">Today, 17.03.2018</div>
+              <ul class="messages">
+                <li class="message other-message">
+                  <p class="message-text">
+                    On the other hand, we denounce with righteous indignation!
+                  </p>
+                  <p class="message-time">01:14</p>
+                </li>
+
+                <li class="message my-message">
+                  <p class="message-text">Which is the same as saying?</p>
+                  <p class="message-time">01:38</p>
+                </li>
+                <li class="message other-message">
+                  <p class="message-text ">
+                    But in certain circumstances and owing to the claims of duty
+                    or the obligations of business it will frequently occur that
+                    pleasures
+                  </p>
+                  <p class="message-time">01:42</p>
+                </li>
+                <li class="message my-message">
+                  <p class="message-text ">
+                    To take a trivial example, which of us ever undertakes)
+                  </p>
+                  <p class="message-time">01:55</p>
+                </li>
+              </ul>
+            </div>
+            <form class="type-message-window" action="">
+              <input
+                type="text"
+                class="input-message"
+                placeholder="Write a message"
+              />
+              <div class="message-buttons-container">
+                <button type="button" class="smiles">
+                  <img
+                    class="smiles-image"
+                    src="./img/smile.svg"
+                    alt="smile button icon"
+                  />
+                </button>
+                <button type="button" class="screp">
+                  <img
+                    class="screp-image"
+                    src="./img/screp.svg"
+                    alt="screp button icon"
+                  />
+                </button>
+                <button type="submit" class="send">
+                  <img
+                    class="send-image"
+                    src="./img/send-message-button@2x.svg"
+                    alt="send message button icon"
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
